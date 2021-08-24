@@ -65,18 +65,18 @@ func main() {
 		"============================================================\n",
 	) // 启动打印
 	zero.Run(zero.Config{
-		NickName:      []string{"椛椛", "ATRI", "atri", "亚托莉", "アトリ"},
+		NickName:      []string{"小妮", "妮妮", "Ni", "NiBot", "Bot"},
 		CommandPrefix: "/",
 
 		// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
 		// []string{}：通过代码写死的方式添加主人账号
 		// os.Args[1:]：通过命令行参数的方式添加主人账号
-		SuperUsers: append([]string{"12345678", "87654321"}, os.Args[1:]...),
+		SuperUsers: append([]string{"2517421382"}, os.Args[1:]...),
 
 		Driver: []zero.Driver{
 			&driver.WSClient{
 				// OneBot 正向WS 默认使用 6700 端口
-				Url:         "ws://127.0.0.1:6700",
+				Url:         "ws://172.17.43.114:6700",
 				AccessToken: "",
 			},
 		},
